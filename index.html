@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/app.js" defer></script>
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="img-logo" src="assets/logo.png" alt="Logo alura">
+        </nav>
+    </header>
+
+    <main>
+        <section class="primeira-secao">
+            <div id="area-de-texto">
+                <textarea name="campo-mensagem" id="campo-mensagem" cols="30" rows="10" style="resize: none;" placeholder="Digite se texto"></textarea>
+            </div>
+
+            <div class="area-aviso">
+                <img src="assets/exclamation-circle-fill.svg" alt="">
+                Apenas letras minúsculas e sem acento.
+            </div>
+            <div class="botoes">
+                <button class="botao-criptografar" onclick="criptografarMensagem()">Criptografar</button>
+                <button class="botao-descriptografar" onclick="descriptografarMensagem()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section id="terceira-secao">
+            <img src="assets/image-search.png" id="imagem-mensagem" alt="">
+            <h1 id="mensagem-informacoes">Nenhuma mensagem encontrada</h1>
+            <p id="mensagem-resultado">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button id="botao-copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido por <a href="">Mateus Dias</a></p>
+    </footer>
+</body>
+</html>
