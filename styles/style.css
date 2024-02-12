@@ -137,31 +137,3 @@ footer {
 footer > p > a {
     color: var(--dark-blue);
 }
-
-@media (max-width: 768px) {
-    body {
-        padding: 40px;
-        margin: 0;
-        width: 70%;
-    }
-
-    header {
-        display: flex;
-        width: auto;
-        justify-content: center;
-    }
-
-    #campo-mensagem {
-        width: 60%;
-    }
-
-    .botoes {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-}
