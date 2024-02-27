@@ -55,3 +55,10 @@ function mostrarMensagemNaTela() {
     msgNaoEncontrada.style.display = "none";
     imagemMensagem.style.display = "none";
 }
+
+document.getElementById("botaoCopiar").addEventListener('click', execCopy());
+
+function execCopy() {
+    document.getElementById("campo-mensagem").select();
+    document.execCommand("copy");
+}
